@@ -1,0 +1,733 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+}
+body {
+    background-image: url(https://raw.githubusercontent.com/daviamaralqueirozz-hash/daviamaralqueiroz.github.io/refs/heads/main/bg.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-position: center right;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+
+@media (max-width: 1086px) {
+    .descrição {
+        width: 100% !important;
+    }
+    .menu{
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .imgs-deonde-trabalhei img{
+        margin: 0 0 0 5px;
+    }
+    .imgs-deonde-trabalhei2 img{
+        margin: 0 0 0 5px;
+    }
+}
+
+.pai{
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+    /*height: 100vh;*/
+    background-color: #000;
+}
+
+.header{
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+.topo{
+    width: 98%;
+    margin: 0 auto 20px auto;
+    background-color: #2b2b2b;
+}
+
+.quem-sou-eu {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    
+}
+
+.imagem-minha {
+    flex: 1 1 60%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.imagem-minha img {
+  width: 80%;
+}
+
+.espc-minha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    text-align: left; /* centraliza texto */
+    flex: 1 1 40%;
+    height: 570px;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.espc-minha p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
+}
+
+.ja-trabalhei {
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.ja-trabalhei h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.imgs-deonde-trabalhei{
+    width: 98%;
+    max-width: 1300px;
+    min-width: 300px;
+    display: block;
+    height: auto;
+}
+
+.imgs-deonde-trabalhei img{
+    margin: 0 0 5px 50px;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+}
+
+.imgs-deonde-trabalhei2{
+    width: 98%;
+    max-width: 1300px;
+    min-width: 300px;
+    display: block;
+    height: auto;
+}
+
+.imgs-deonde-trabalhei2 img{
+    margin: 0 0 5px 50px;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.descrição{
+    width: 60%;
+    display: inline-block;
+    margin: 10px auto 10px auto;
+}
+
+.texto-topo{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+
+}
+
+.menu{
+    width: 100%;
+    max-width: 265px;
+    display: inline-block;
+    justify-content: flex-end;
+    background-color: #2b2b2b;
+    padding: 15px;
+    height: auto;
+    margin: 0 0 0 auto;
+    
+    
+    
+}
+
+.menu-item{
+    
+    display: inline-block;
+    margin: 0 20px 0 auto;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #444;
+    border-radius: 5px;
+        
+}
+.menu-item:hover{
+    background-color: #555;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    display: flex;
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 400px;
+}
+.carousel-images{
+    display: flex;
+}
+
+button {
+    
+    
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+    z-index: 999;
+}
+
+.next {
+    right: 10px;
+}
+
+.texto-trabalho{
+    width: 90%;
+    
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+
+}
+
+.meus-trabalhos{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.banner-email-mkt01{
+    width: 100%;
+    height: 400px;
+    border: 1px solid #eee;
+    max-width: 300px;
+}
+.texto-email-mkt01{
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.img-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.img-button img {
+    width: auto;
+    max-height: 250px;
+    border-radius: 5px;
+    border: 1px solid #2c2c2c;
+    transition: transform 0.3s ease;
+}
+
+.img-button:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay.active .overlay-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ov-titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Overlay2 */
+
+#overlay2 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay2.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay2-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay2.active .overlay2-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/* Overlay3 */
+
+#overlay3 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay3.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay3-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay3.active .overlay3-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/* Overlay4 */
+
+#overlay4 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay4.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay4-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay4.active .overlay4-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Overlay5 */
+
+#overlay5 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay5.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay5-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay5.active .overlay5-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Overlay6 */
+
+#overlay6 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay6.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay6-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay6.active .overlay6-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Overlay7 */
+
+#overlay7 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay7.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay7-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay7.active .overlay7-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.ov-limite{
+    overflow: auto;
+    max-height: 500px;
+}
+
+/* Overlay8 */
+
+#overlay8 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay8.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay8-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay8.active .overlay8-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Overlay9 */
+
+#overlay9 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay9.active {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay9-content {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#overlay9.active .overlay9-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+
