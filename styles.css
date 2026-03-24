@@ -770,9 +770,11 @@ button:hover {
 }
 
 .footer-div02{
-    width: 100%;
+    width: 40%;
     margin: 0 auto;
+    display: inline-block;
 }
+
 
 .footer-div01-p{
     color:#ffffff;
@@ -795,7 +797,7 @@ button:hover {
 }
 
 .footer-div03{
-    width: 100%;
+    width: 20%;
     display: inline-block;
     margin: 0 auto;
 }
