@@ -3,6 +3,11 @@
     font-size: 12px;
 
 }
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-image: url(https://raw.githubusercontent.com/daviamaralqueirozz-hash/daviamaralqueiroz.github.io/refs/heads/main/bg.jpg);
     background-repeat: no-repeat;
@@ -28,6 +33,17 @@ body {
     }
     .imgs-deonde-trabalhei2 img{
         margin: 0 0 0 5px;
+    }
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-estudo {
+        padding: 25px;
     }
 }
 
@@ -117,12 +133,251 @@ body {
     line-height: 1.5;
 }
 
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.hero-btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.hero-btn-primary:hover {
+    background-color: #dcdcdc;
+}
+
+.hero-btn-secondary {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.hero-btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .esp-baixo-minha{
     width: 100%;
     padding: 40px;
     margin: 0 auto;
     color: #ffffff;
     text-align: center;
+}
+
+/* =========================
+   PROJETOS EM DESTAQUE
+========================= */
+
+.projetos-destaque {
+    width: 92%;
+    max-width: 1200px;
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+.projetos-header {
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.projetos-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+}
+
+.projetos-header h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.projetos-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projeto-card {
+    background-color: #151515;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.projeto-card {
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-6px);
+    border-color: #555555;
+    background-color: #1b1b1b;
+}
+
+.projeto-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    transition: opacity 0.3s ease;
+}
+
+.projeto-link:hover {
+    opacity: 0.65;
+}
+
+/* =========================
+   CASE SHOPBACK / LINX
+========================= */
+
+.case-estudo {
+    width: 92%;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #111111;
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.case-header {
+    max-width: 800px;
+    margin-bottom: 45px;
+}
+
+.case-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #999999;
+}
+
+.case-header h2 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.case-subtitulo {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.case-bloco {
+    padding: 25px;
+    background-color: #181818;
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+}
+
+.case-numero {
+    display: block;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.case-bloco h3 {
+    font-size: 20px;
+    margin: 0 0 12px 0;
+}
+
+.case-bloco p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+.case-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.case-tecnologias span {
+    padding: 8px 12px;
+    background-color: #222222;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #dddddd;
+}
+
+.case-voltar {
+    margin-top: 30px;
+}
+
+.case-voltar-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    transition: opacity 0.3s ease;
+}
+
+.case-voltar-link:hover {
+    opacity: 0.65;
+}
+
+.projeto-categoria {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #999999;
+}
+
+.projeto-card h3 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.projeto-card p {
+    line-height: 1.6;
+}
+
+.projeto-tech {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #333333;
+    font-size: 12px;
+    color: #bbbbbb;
 }
 
 .ja-trabalhei {
