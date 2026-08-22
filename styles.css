@@ -96,6 +96,35 @@ body {
     padding: 5px 0 5px 0;
 }
 
+.hero-nome {
+    font-size: 25px !important;
+    font-weight: 700;
+}
+
+.hero-descricao {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-destaque {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.hero-stack {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.esp-baixo-minha{
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+}
+
 .ja-trabalhei {
     width: 98%;
     display: block;
@@ -116,6 +145,8 @@ body {
     min-width: 300px;
     display: block;
     height: auto;
+    color: #ffffff;
+    text-align: left;
 }
 
 .imgs-deonde-trabalhei img{
