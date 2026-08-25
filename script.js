@@ -77,3 +77,23 @@ function openOverlay9() {
 function closeOverlay9() {
     document.getElementById('overlay9').classList.remove('active');
 }
+
+function closeOverlay10() {
+    document.getElementById('overlay10').classList.remove('active');
+}
+
+function openOverlayById(overlayId) {
+    const overlay = document.getElementById(overlayId);
+
+    if (overlay) {
+        overlay.classList.add('active');
+    }
+}
+
+function closeOverlayById(overlayId) {
+    const overlay = document.getElementById(overlayId);
+
+    if (overlay) {
+        overlay.classList.remove('active');
+    }
+}

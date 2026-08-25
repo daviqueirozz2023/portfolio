@@ -276,7 +276,11 @@
                         <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/09.png" alt="Abrir Overlay9">
                     </button>
 
-                    <button class="img-button empresa-texto-button" onclick="openOverlay10()">
+                    <button
+                        class="img-button"
+                        onclick="openOverlayById('overlay10')"
+                        aria-label="Ver experiência na BR360 Soluções Imobiliárias"
+                    >
                         
                         <img src="https://daviqueirozz2023.github.io/portfolio/10.png" alt="Abrir Overlay10">
                         <span class="empresa-texto-logo">
@@ -330,6 +334,7 @@
 
         </div>
         -->
+        
         <footer class="footer">
                 <div class="footer-div01">
                     <p class="footer-div01-p">
@@ -366,7 +371,8 @@
                     </ul>
 
                 </div>
-    </footer>
+        </footer>
+
     </div>
     <script src="script.js"></script>
     <!-- Overlay 01 -->
@@ -1239,6 +1245,80 @@
                 
             </div>
         </div>
+    </div>
+
+    <!-- Overlay 10 - BR360 -->
+    <div id="overlay10" onclick="closeOverlayById('overlay10')">
+
+        <div class="overlay10-content" onclick="event.stopPropagation()">
+
+            <span
+                class="close-btn"
+                onclick="closeOverlayById('overlay10')"
+                aria-label="Fechar"
+            >
+                &times;
+            </span>
+
+            <p class="ov-titulo">
+                Desenvolvimento de CRM e Automação de Marketing — BR360 Soluções Imobiliárias
+            </p>
+
+            <div class="ov-limite">
+
+                <p>
+                    Entre março e agosto de 2026, atuei na BR360 Soluções Imobiliárias
+                    no desenvolvimento e evolução de soluções internas baseadas em CRM,
+                    utilizando PHP e MySQL com foco em automação de campanhas de marketing.
+                </p>
+
+                <p><b>Desenvolvimento Backend & Arquitetura</b></p>
+
+                <ul>
+                    <li>Desenvolvimento de funcionalidades em PHP utilizando arquitetura MVC</li>
+                    <li>Criação e manutenção de Controllers, Models, Views e Libraries</li>
+                    <li>Manipulação e estruturação de dados com MySQL e phpMyAdmin</li>
+                    <li>Desenvolvimento e manutenção de interfaces administrativas no Perfex CRM</li>
+                </ul>
+
+                <p><b>CRM & Automação de Marketing</b></p>
+
+                <ul>
+                    <li>Desenvolvimento de módulo para criação e gerenciamento de campanhas de e-mail</li>
+                    <li>Implementação de públicos manuais e segmentados</li>
+                    <li>Desenvolvimento de filas com status draft, pending, processing, sent e failed</li>
+                    <li>Criação de logs para auditoria e acompanhamento dos disparos</li>
+                    <li>Integração com SMTP para envio de e-mails</li>
+                </ul>
+
+                <p><b>Segurança & Homologação</b></p>
+
+                <ul>
+                    <li>Implementação de ambiente seguro de homologação para testes de envio</li>
+                    <li>Prevenção de disparos duplicados e envios não autorizados</li>
+                    <li>Validações via POST e proteção CSRF</li>
+                    <li>Controle de acesso administrativo</li>
+                </ul>
+
+                <p><b>Integrações & Evolução</b></p>
+
+                <ul>
+                    <li>Preparação para futura integração com WhatsApp Cloud API</li>
+                    <li>Estruturação para integrações via APIs REST</li>
+                    <li>Versionamento e organização do código com Git/GitHub</li>
+                </ul>
+
+                <p><b>Tecnologias utilizadas:</b></p>
+
+                <p>
+                    PHP • MySQL • JavaScript • HTML • CSS • MVC • Perfex CRM •
+                    SMTP • Git/GitHub • phpMyAdmin • APIs REST
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>
