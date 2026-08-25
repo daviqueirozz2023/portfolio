@@ -1,11 +1,3 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
-}
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
-
 function openOverlay() {
     document.getElementById('overlay').classList.add('active');
 }
@@ -78,8 +70,12 @@ function closeOverlay9() {
     document.getElementById('overlay9').classList.remove('active');
 }
 
-function closeOverlay10() {
-    document.getElementById('overlay10').classList.remove('active');
+function openOverlay11() {
+    document.getElementById('overlay11').classList.add('active');
+}
+
+function closeOverlay11() {
+    document.getElementById('overlay11').classList.remove('active');
 }
 
 function openOverlayById(overlayId) {
@@ -97,3 +93,5 @@ function closeOverlayById(overlayId) {
         overlay.classList.remove('active');
     }
 }
+
+

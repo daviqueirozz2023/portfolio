@@ -1101,3 +1101,43 @@ button:hover {
     margin: 10px 0 0 0;
     text-decoration: none;
 }
+
+#overlay11 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay11.active {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay11-content {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    color: #000;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#overlay11.active .overlay11-content {
+    transform: scale(1);
+    opacity: 1;
+}
