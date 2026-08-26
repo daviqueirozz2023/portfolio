@@ -925,93 +925,7 @@ button:hover {
     max-height: 500px;
 }
 
-/* Overlay8 */
 
-#overlay8 {
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    pointer-events: none;
-    opacity: 0;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
-}
-
-#overlay8.active {
-    background-color: rgba(0,0,0,0.75);
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.overlay8-content {
-    background: white;
-    padding: 20px;
-    max-width: 500px;
-    width: 90%;
-    border-radius: 8px;
-    position: relative;
-    color: #000;
-    font-size: 14px;
-    transform: scale(0.7);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-
-#overlay8.active .overlay8-content {
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* Overlay9 */
-
-#overlay9 {
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    pointer-events: none;
-    opacity: 0;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
-}
-
-#overlay9.active {
-    background-color: rgba(0,0,0,0.75);
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.overlay9-content {
-    background: white;
-    padding: 20px;
-    max-width: 500px;
-    width: 90%;
-    border-radius: 8px;
-    position: relative;
-    color: #000;
-    font-size: 14px;
-    transform: scale(0.7);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-
-#overlay9.active .overlay9-content {
-    transform: scale(1);
-    opacity: 1;
-}
 
 .container-contato{
     width: 100%;
@@ -1102,42 +1016,68 @@ button:hover {
     text-decoration: none;
 }
 
-#overlay11 {
+
+
+
+
+
+
+/* =========================
+   OVERLAY GENÉRICO
+========================= */
+
+.overlay {
     position: fixed;
     display: flex;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+
     background-color: rgba(0, 0, 0, 0);
+
     justify-content: center;
     align-items: center;
+
     z-index: 1000;
+
     pointer-events: none;
     opacity: 0;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+
+    transition:
+        background-color 0.3s ease,
+        opacity 0.3s ease;
 }
 
-#overlay11.active {
+.overlay.active {
     background-color: rgba(0, 0, 0, 0.75);
     opacity: 1;
     pointer-events: auto;
 }
 
-.overlay11-content {
-    background: white;
+.overlay-box {
+    background-color: #ffffff;
+
     padding: 20px;
+
     max-width: 600px;
     width: 90%;
+
     border-radius: 8px;
+
     position: relative;
-    color: #000;
+
+    color: #000000;
+
     transform: scale(0.7);
     opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
 }
 
-#overlay11.active .overlay11-content {
+.overlay.active .overlay-box {
     transform: scale(1);
     opacity: 1;
 }
