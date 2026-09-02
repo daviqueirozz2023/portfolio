@@ -595,15 +595,44 @@ button:hover {
     transform: scale(1.05);
 }
 
+.img-button:focus-visible {
+    outline: none;
+}
 
+.img-button:focus-visible img {
+    outline: 2px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 2px;
+    border-radius: 8px;
+}
 
 .close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    background: transparent;
+    border: none;
+    padding: 0;
+
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    line-height: 1;
+    box-shadow: none;
+    outline: none;
+}
+
+.close-btn:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.close-btn:focus-visible {
+    outline: 2px solid #000000;
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 
 .ov-titulo{
@@ -771,4 +800,10 @@ button:hover {
 .overlay.active .overlay-box {
     transform: scale(1);
     opacity: 1;
+}
+
+.overlay a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    border-radius: 2px;
 }

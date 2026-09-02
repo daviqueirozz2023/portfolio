@@ -231,20 +231,20 @@
                 
                 <div class="imgs-deonde-trabalhei">
                     
-                    <button class="img-button" onclick="openOverlay()">
+                    <button class="img-button" onclick="openOverlayById('overlay')">
                         <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/01.png" alt="Abrir Overlay">
                     </button>
 
                     
-                    <button class="img-button" onclick="openOverlay2()">
+                    <button class="img-button" onclick="openOverlayById('overlay2')">
                         <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/02.png" alt="Abrir Overlay2">
                     </button>
 
-                    <button class="img-button" onclick="openOverlay3()">
+                    <button class="img-button" onclick="openOverlayById('overlay3')">
                         <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/03.png" alt="Abrir Overlay3">
                     </button>
                     
-                    <button class="img-button" onclick="openOverlay4()">
+                    <button class="img-button" onclick="openOverlayById('overlay4')">
                         <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/04.png" alt="Abrir Overlay4">
                     </button>
 
@@ -370,10 +370,19 @@
     </div>
     <script src="script.js"></script>
     <!-- Overlay 01 -->
-  <div id="overlay" class="overlay" onclick="closeOverlay()">
+  <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-hidden="true" onclick="closeOverlayById('overlay')">
     <div class="overlay-box" onclick="event.stopPropagation()">
-        <span class="close-btn" onclick="closeOverlay()">&times;</span>
-        <p class="ov-titulo">Web Designer — Natiluca & BelmaCut</p>
+        <button
+            type="button"
+            class="close-btn"
+            aria-label="Fechar"
+            aria-haspopup="dialog"
+            aria-controls="overlay"
+            title="Fechar"
+            onclick="closeOverlayById('overlay')" >
+            &times;
+        </button>
+        <p id="overlay-title" class="ov-titulo">Web Designer — Natiluca & BelmaCut</p>
         <p> Iniciei a minha carreira como estagiário em 2011, onde desenvolvi as bases técnicas e criativas na área de web design.<br> 
             Após o período de estágio, fui efetivado como Web Designer na empresa Natiluca – BelmaCut.
         </p>
@@ -411,10 +420,13 @@
   </div>
     
     <!-- Overlay 02 -->
-    <div id="overlay2" class="overlay" onclick="closeOverlay2()">
+    <div id="overlay2" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay2-title" aria-hidden="true" onclick="closeOverlayById('overlay2')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlay2()">&times;</span>
-            <p class="ov-titulo">Web Designer — Natiluca & BelmaCut</p>
+            <button type="button" class="close-btn" aria-label="Fechar" aria-haspopup="dialog"
+            aria-controls="overlay2" title="Fechar" onclick="closeOverlayById('overlay2')" >
+                &times;
+            </button>
+            <p id="overlay2-title" class="ov-titulo">Web Designer — Natiluca & BelmaCut</p>
         <p> Iniciei a minha carreira como estagiário em 2011, onde desenvolvi as bases técnicas e criativas na área de web design.<br> 
             Após o período de estágio, fui efetivado como Web Designer na empresa Natiluca – BelmaCut.
         </p>
@@ -452,10 +464,20 @@
     </div>
 
     <!-- Overlay 03 -->
-    <div id="overlay3" class="overlay" onclick="closeOverlay3()">
+    <div id="overlay3" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay3-title" aria-hidden="true" onclick="closeOverlayById('overlay3')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlay3()">&times;</span>
-            <p class="ov-titulo">Web Designer / Design Digital — ShopBack</p>
+            <button
+                type="button"
+                class="close-btn"
+                aria-label="Fechar"
+                aria-haspopup="dialog"
+                aria-controls="overlay3"
+                title="Fechar"
+                onclick="closeOverlayById('overlay3')"
+            >
+                &times;
+            </button>
+            <p id="overlay3-title" class="ov-titulo">Web Designer / Design Digital — ShopBack</p>
             <p>
                 Em 2013, integrei a equipe da ShopBack, uma startup focada em oferecer soluções digitais para lojas virtuais e sites institucionais, com o objetivo de aumentar o engajamento, tráfego e conversões.
             </p>
@@ -495,10 +517,20 @@
     </div>
 
     <!-- Overlay 04 -->
-    <div id="overlay4" class="overlay" onclick="closeOverlay4()">
+    <div id="overlay4" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay4-title" aria-hidden="true" onclick="closeOverlayById('overlay4')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlay4()">&times;</span>
-            <p class="ov-titulo">Designer Digital / Front-End Developer — Linx</p>
+            <button
+                type="button"
+                class="close-btn"
+                aria-label="Fechar"
+                aria-haspopup="dialog"
+                aria-controls="overlay4"
+                title="Fechar"
+                onclick="closeOverlayById('overlay4')"
+            >
+                &times;
+            </button>
+            <p id="overlay4-title" class="ov-titulo">Designer Digital / Front-End Developer — Linx</p>
             <p>
                 Em 2019, após a aquisição da equipa pela Linx — empresa especializada em tecnologia para o varejo — dei continuidade às atividades estratégicas iniciadas anteriormente, 
                 agora num ambiente corporativo de maior escala e estrutura.
@@ -581,12 +613,20 @@
     </div>
 
     <!-- Overlay 05 -->
-    <div id="overlay5" class="overlay" onclick="closeOverlayById('overlay5')">
+    <div id="overlay5" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay5-title" aria-hidden="true" onclick="closeOverlayById('overlay5')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlayById('overlay5')">
+            <button
+                type="button"
+                class="close-btn"
+                aria-label="Fechar"
+                aria-haspopup="dialog"
+                aria-controls="overlay5"
+                title="Fechar"
+                onclick="closeOverlayById('overlay5')"
+            >
                 &times;
-            </span>
-            <p class="ov-titulo">Design Digital / Front-End Developer — Stone</p>
+            </button>
+            <p id="overlay5-title" class="ov-titulo">Design Digital / Front-End Developer — Stone</p>
             <p>
                 Entre 2022 e 2023, atuei na Stone, empresa de tecnologia financeira focada em soluções para o varejo e meios de pagamento, 
                 exercendo funções estratégicas na área de comunicação digital e performance para ambientes online.
@@ -670,12 +710,20 @@
     </div>
 
     <!-- Overlay 06 -->
-    <div id="overlay6" class="overlay" onclick="closeOverlayById('overlay6')">
+    <div id="overlay6" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay6-title" aria-hidden="true" onclick="closeOverlayById('overlay6')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlayById('overlay6')">
+            <button
+                type="button"
+                class="close-btn"
+                aria-label="Fechar"
+                aria-haspopup="dialog"
+                aria-controls="overlay6"
+                title="Fechar"
+                onclick="closeOverlayById('overlay6')"
+            >
                 &times;
-            </span>
-            <p class="ov-titulo">Web Designer / Marketing Analyst — Grupo Rhonna</p>
+            </button>
+            <p id="overlay6-title" class="ov-titulo">Web Designer / Marketing Analyst — Grupo Rhonna</p>
             <p>
                 Em 2023, iniciei a minha atuação no Grupo Rhonna, expandindo as minhas competências em desenvolvimento web e marketing digital integrado.
             </p>
@@ -737,12 +785,19 @@
     </div>
 
     <!-- Overlay 07 -->
-    <div id="overlay7" class="overlay" onclick="closeOverlayById('overlay7')">
+    <div id="overlay7" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay7-title" aria-hidden="true" onclick="closeOverlayById('overlay7')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlayById('overlay7')">
+            <button
+                type="button"
+                class="close-btn"
+                aria-label="Fechar" aria-haspopup="dialog"
+                aria-controls="overlay7"
+                title="Fechar"
+                onclick="closeOverlayById('overlay7')"
+            >
                 &times;
-            </span>
-            <p class="ov-titulo">Designer Gráfico / Web Designer / Marketing Digital — Innove Propaganda</p>
+            </button>
+            <p id="overlay7-title" class="ov-titulo">Designer Gráfico / Web Designer / Marketing Digital — Innove Propaganda</p>
             <div class="ov-limite">
                 <p>
                     Em 2025, atuei na Innove Propaganda, agência especializada em marketing digital, campanhas promocionais e produção gráfica em larga escala. <br>
@@ -890,12 +945,13 @@
     </div>
 
     <!-- Overlay 08 -->
-    <div id="overlay8" class="overlay" onclick="closeOverlayById('overlay8')">
+    <div id="overlay8" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay8-title" aria-hidden="true" onclick="closeOverlayById('overlay8')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlayById('overlay8')">
+            <button type="button" class="close-btn" aria-label="Fechar" aria-haspopup="dialog"
+            aria-controls="overlay8" title="Fechar" onclick="closeOverlayById('overlay8')" >
                 &times;
-            </span>
-            <p class="ov-titulo">Web Developer / Digital Strategist — Âncora Saúde Corporativa</p>
+            </button>
+            <p id="overlay8-title" class="ov-titulo">Web Developer / Digital Strategist — Âncora Saúde Corporativa</p>
             <p>
                 Atuei no desenvolvimento e estruturação completa do ecossistema digital da Âncora Saúde Corporativa, 
                 incluindo o website institucional e a plataforma educacional de cursos online, com foco estratégico em autoridade de marca, geração de leads e conversão comercial.
@@ -1086,12 +1142,15 @@
     </div>
 
     <!-- Overlay 09 -->
-    <div id="overlay9" class="overlay" onclick="closeOverlayById('overlay9')">
+    <div id="overlay9" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay9-title" aria-hidden="true" onclick="closeOverlayById('overlay9')">
         <div class="overlay-box" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeOverlayById('overlay9')">
+            <button type="button" class="close-btn" aria-label="Fechar" aria-haspopup="dialog"
+aria-controls="overlay9" title="Fechar" onclick="closeOverlayById('overlay9')" >
                 &times;
-            </span>
-            <p class="ov-titulo">Web Developer / Digital Strategist — Villa Urbana Brasil</p>
+            </button>
+            <p id="overlay9-title" class="ov-titulo">
+                Web Developer / Digital Strategist — Villa Urbana Brasil
+            </p>
             <p>
                 Atuei na estruturação completa da presença digital da Villa Urbana Brasil, empresa do segmento de engenharia civil, 
                 gestão de obras e regularização imobiliária, com foco estratégico em autoridade de marca, geração de leads qualificados e posicionamento técnico no mercado.
@@ -1252,15 +1311,16 @@
     </div>
 
     <!-- Overlay 11 - BR360 -->
-    <div id="overlay11" class="overlay" onclick="closeOverlayById('overlay11')">
+    <div id="overlay11" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay11-title" aria-hidden="true" onclick="closeOverlayById('overlay11')">
 
         <div class="overlay-box" onclick="event.stopPropagation()">
 
-            <span class="close-btn" onclick="closeOverlayById('overlay11')">
+            <button type="button" class="close-btn" aria-label="Fechar" aria-haspopup="dialog"
+aria-controls="overlay11" title="Fechar" onclick="closeOverlayById('overlay11')" >
                 &times;
-            </span>
+            </button>
 
-            <p class="ov-titulo">
+            <p id="overlay11-title" class="ov-titulo">
                 Desenvolvimento de CRM e Automação de Marketing — BR360 Soluções Imobiliárias
             </p>
 
