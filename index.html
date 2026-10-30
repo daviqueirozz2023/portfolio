@@ -53,7 +53,7 @@
                             Ver Projetos
                         </a>
 
-                        <a href="Contato.html" class="hero-btn hero-btn-secondary">
+                        <a href="contato.html" class="hero-btn hero-btn-secondary">
                             Entrar em Contato
                         </a>
                     </div>
@@ -111,9 +111,15 @@
             <div class="projeto-tech">
                 WordPress • Elementor • JetEngine • UX/UI
             </div>
-            <a href="#" class="projeto-link">
+            <button
+                type="button"
+                class="projeto-link projeto-link-button"
+                onclick="openOverlayById('overlay8')"
+                aria-haspopup="dialog"
+                aria-controls="overlay8"
+            >
                 Ver Case
-            </a>
+</button>
         </article>
 
 
@@ -134,33 +140,72 @@
                 PHP • MySQL • MVC • Perfex CRM • APIs REST
             </div>
 
-            <a href="#" class="projeto-link">
-                Ver Case
-            </a>
+            <button
+                type="button"
+                class="projeto-link projeto-link-button"
+                onclick="openOverlayById('overlay11')"
+                aria-haspopup="dialog"
+                aria-controls="overlay11"
+            >
+            Ver Case
+</button>
         </article>
 
         <!-- Novo Card: FlowDesk -->
-        <article class="projeto-card">
+        
+<!-- Card: FlowDesk -->
+    <article class="projeto-card projeto-card-flowdesk">
+
+        <div class="projeto-imagem">
+            <img
+                src="images/flowdesk-dashboard.png"
+                alt="Dashboard do FlowDesk com navegação, indicadores e gestão de projetos"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="projeto-conteudo">
+
             <p class="projeto-categoria">
-                PROJECT MNGMT • CRM
+                PROJETO PESSOAL • FRONT-END
             </p>
 
-            <h3>FlowDesk</h3>
+            <h3>FlowDesk — Gestão de Projetos e CRM</h3>
 
             <p>
-                Dashboard completo para gestão de projetos e CRM, com foco em uma 
-                interface de alta performance para controle de clientes, tarefas 
-                e análise visual de métricas.
+                Dashboard desenvolvido com Angular e TypeScript,
+                com interface para gerenciamento de clientes,
+                projetos e tarefas, além de indicadores visuais.
             </p>
 
             <div class="projeto-tech">
-                Angular • TypeScript • HTML • CSS • Git Actions
+                Angular • TypeScript • HTML • CSS • Git
             </div>
 
-            <a href="https://daviqueirozz2023.github.io/flowdesk" target="_blank" class="projeto-link">
-                Acessar Demonstração
-            </a>
-        </article>
+            <div class="projeto-acoes">
+                <a
+                    href="https://daviqueirozz2023.github.io/flowdesk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projeto-btn projeto-btn-primary"
+                >
+                    Ver demonstração
+                </a>
+
+                <a
+                    href="https://github.com/daviqueirozz2023/flowdesk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projeto-btn projeto-btn-secondary"
+                >
+                    Ver código no GitHub
+                </a>
+            </div>
+
+        </div>
+
+    </article>
+
 
 
     </div>
@@ -300,6 +345,12 @@
                         <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/09.png" alt="Abrir Overlay9">
                     </button>
 
+                    <button class="img-button" onclick="openOverlayById('overlay10')">
+                        
+                        <img src="https://daviqueirozz2023.github.io/portfolio/10.png" alt="Abrir Overlay10">
+                        
+                    </button>
+
                     <button class="img-button" onclick="openOverlayById('overlay11')">
                         
                         <img src="https://daviqueirozz2023.github.io/portfolio/11.png" alt="Abrir Overlay11">
@@ -353,43 +404,63 @@
         </div>
         -->
 
+        
         <footer class="footer">
-                <div class="footer-div01">
-                    <p class="footer-div01-p">
-                        VAMOS CRIAR ALGO JUNTOS? <br>
-                        Estou disponível para oportunidades em Web Design, Front-End e projetos digitais.
+
+            <div class="footer-container">
+
+                <div class="footer-apresentacao">
+                    <h2>Vamos criar algo juntos?</h2>
+                    <p>
+                        Estou disponível para oportunidades em
+                        Web Design, Front-End e projetos digitais.
                     </p>
                 </div>
 
-                <div class="footer-div02">
-                    
-                        <ul class="footer-div02-ul">
-                            <a href="index.html" target="_blank" style="text-decoration: none;">
-                                <li class="footer-div02-li">Home</li>
-                            </a>
-                            <a href="indexTrabalhos.html" target="_blank" style="text-decoration: none;">
-                                <li class="footer-div02-li">Trabalhos</li>
-                            </a>
-                            <a href="contato.html" target="_blank" style="text-decoration: none;">
-                                <li class="footer-div02-li">Contato</li>
-                            </a>
+                <div class="footer-links">
+
+                    <nav class="footer-coluna" aria-label="Navegação do rodapé">
+                        <h3>Navegação</h3>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="indexTrabalhos.html">Trabalhos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
                         </ul>
-                    
+                    </nav>
+
+                    <div class="footer-coluna">
+                        <h3>Redes sociais</h3>
+
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/davi-amaral-queiroz-03798449/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    LinkedIn
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/davi_amaral_queiroz/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
-                <div class="footer-div03">
-
-                    <ul class="footer-div03-ul" >
-                        <a href="https://www.instagram.com/davi_amaral_queiroz/" target="_blank" style="text-decoration: none;">
-                            <li class="footer-div03-li">Instagram</li>
-                        </a>
-                        <a href="https://www.linkedin.com/in/davi-amaral-queiroz-03798449/" target="_blank" style="text-decoration: none;">
-                            <li class="footer-div03-li">Linkedin</li>
-                        </a>
-                    </ul>
-
+                <div class="footer-bottom">
+                    <p>© 2026 Davi Amaral Queiroz. Todos os direitos reservados.</p>
                 </div>
+
+            </div>
+
         </footer>
+
 
     </div>
     <script src="script.js"></script>
@@ -1008,7 +1079,10 @@
                 <li>
                     Criação de layouts personalizados com <b>squarespace</b>
                 </li>
-                <li>Estruturação dinâmica de conteúdos com JetEngine</li>
+                <li>
+                    Desenvolvimento e estruturação do site institucional
+                    utilizando <b>Squarespace</b>.
+                </li>
                 <ul>
                     <li>
                         Custom Post Types (CPT)
@@ -1177,7 +1251,8 @@ aria-controls="overlay9" title="Fechar" onclick="closeOverlayById('overlay9')" >
             </p>
             <p>
                 Atuei na estruturação completa da presença digital da Villa Urbana Brasil, empresa do segmento de engenharia civil, 
-                gestão de obras e regularização imobiliária, com foco estratégico em autoridade de marca, geração de leads qualificados e posicionamento técnico no mercado.
+                gestão de obras e regularização imobiliária, com foco estratégico em autoridade de marca, geração de leads qualificados e 
+                posicionamento técnico no mercado.
             </p>
             <div class="ov-limite">
                <p>
@@ -1260,17 +1335,21 @@ aria-controls="overlay9" title="Fechar" onclick="closeOverlayById('overlay9')" >
                 </b>
                </p>
                <li>
-                WordPress (gestão e estruturação de conteúdo)
-               </li>
-               <li>
-                Elementor (UI responsiva e layout visual)
-               </li>
-               <li>
-                JetEngine (conteúdo dinâmico e arquitetura personalizada)
-               </li>
-               <li>
-                construtor de site do localweb (gestão e estruturação de conteúdo)
-               </li>
+                    <b>Criador de Sites da Locaweb</b> —
+                    desenvolvimento, estruturação e gerenciamento
+                    do site institucional.
+                </li>
+
+                <li>
+                    <b>HTML</b> — criação e personalização
+                    de componentes específicos.
+                </li>
+
+                <li>
+                    <b>CSS inline</b> — estilização personalizada
+                    de elementos e seções do site.
+                </li>
+               
                <li>
                 Meta Business Suite (gestão e análise de métricas em redes sociais)
                </li>
@@ -1333,6 +1412,175 @@ aria-controls="overlay9" title="Fechar" onclick="closeOverlayById('overlay9')" >
             </div>
         </div>
     </div>
+
+    
+<!-- Overlay 10 - Vexmobi -->
+<div id="overlay10"
+    class="overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="overlay10-title"
+    aria-hidden="true"
+    onclick="closeOverlayById('overlay10')"
+>
+    <div class="overlay-box" onclick="event.stopPropagation()">
+
+        <button
+            type="button"
+            class="close-btn"
+            aria-label="Fechar"
+            title="Fechar"
+            onclick="closeOverlayById('overlay10')"
+        >
+            &times;
+        </button>
+
+        <p id="overlay10-title" class="ov-titulo">
+            Web Designer / Desenvolvedor Web — Vexmobi Real Estate
+        </p>
+
+        <p>
+            Atuei no desenvolvimento do site institucional da
+            Vexmobi Real Estate, empresa do segmento imobiliário
+            com atuação na comercialização de imóveis residenciais,
+            comerciais e rurais na região de Goiânia.
+        </p>
+
+        <p>
+            O projeto envolveu a construção do site do zero,
+            utilizando WordPress e Elementor, com foco na
+            apresentação da empresa, organização dos imóveis
+            disponíveis para venda e facilidade de navegação
+            para potenciais compradores.
+        </p>
+
+        <div class="ov-limite">
+
+            <p>
+                <b>🔹 Desenvolvimento Web & Estrutura Técnica</b>
+            </p>
+
+            <ul>
+                <li>
+                    Desenvolvimento do site institucional do zero
+                    utilizando <b>WordPress e Elementor</b>.
+                </li>
+
+                <li>
+                    Estruturação da página inicial (Home)
+                    com informações institucionais da empresa.
+                </li>
+
+                <li>
+                    Criação e organização de páginas dedicadas
+                    à apresentação dos imóveis disponíveis
+                    para comercialização.
+                </li>
+
+                <li>
+                    Desenvolvimento de componentes personalizados
+                    utilizando <b>HTML e CSS inline</b>.
+                </li>
+
+                <li>
+                    Estruturação visual das páginas seguindo
+                    princípios de usabilidade e UX/UI Design.
+                </li>
+            </ul>
+
+            <hr>
+
+            <p>
+                <b>🔹 Catálogo de Imóveis & Apresentação dos Produtos</b>
+            </p>
+
+            <ul>
+                <li>
+                    Criação de cards personalizados para
+                    apresentação dos imóveis disponíveis
+                    para venda.
+                </li>
+
+                <li>
+                    Desenvolvimento de páginas individuais
+                    para cada imóvel anunciado.
+                </li>
+
+                <li>
+                    Organização das informações dos imóveis,
+                    incluindo imagens, descrições,
+                    características e preços.
+                </li>
+
+                <li>
+                    Estruturação da navegação entre os cards
+                    de imóveis e suas respectivas páginas
+                    de detalhes.
+                </li>
+
+                <li>
+                    Organização visual dos conteúdos para
+                    facilitar a consulta dos imóveis
+                    pelos visitantes.
+                </li>
+            </ul>
+
+            <hr>
+
+            <p>
+                <b>🔹 Ferramentas e Tecnologias Utilizadas</b>
+            </p>
+
+            <ul>
+                <li>
+                    <b>WordPress</b> — estruturação e gerenciamento
+                    do site institucional.
+                </li>
+
+                <li>
+                    <b>Elementor</b> — criação e personalização
+                    visual das páginas.
+                </li>
+
+                <li>
+                    <b>HTML</b> — estruturação de componentes
+                    personalizados.
+                </li>
+
+                <li>
+                    <b>CSS inline</b> — estilização de cards
+                    e elementos específicos.
+                </li>
+            </ul>
+
+            <hr>
+
+            <p>
+                <b>🔹 Competências Técnicas Aplicadas</b>
+            </p>
+
+            <ul>
+                <li>Desenvolvimento de sites institucionais</li>
+                <li>Criação de páginas de produtos imobiliários</li>
+                <li>Personalização de interfaces web</li>
+                <li>Organização e hierarquia visual de conteúdos</li>
+                <li>UX/UI Design aplicado à navegação</li>
+                <li>Estruturação de catálogos digitais</li>
+            </ul>
+
+            <p>
+                Essa experiência fortaleceu minha atuação
+                no desenvolvimento de soluções web para o
+                mercado imobiliário, integrando construção
+                de páginas institucionais, personalização
+                de componentes e apresentação organizada
+                de imóveis para potenciais compradores.
+            </p>
+
+        </div>
+    </div>
+</div>
+
 
     <!-- Overlay 11 - BR360 -->
     <div id="overlay11" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay11-title" aria-hidden="true" onclick="closeOverlayById('overlay11')">

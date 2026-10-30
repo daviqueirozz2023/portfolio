@@ -675,26 +675,149 @@ button:hover {
     margin: 0px 0px 0px 10px;
 }
 
-.footer{
-    width: 80%;
-    height: 200px;
-    /* background-color: #212121; */
-    display: block;
-    margin: 60px auto 0px auto;
-    padding: 10px;
-}
+/* =====================================
+   FOOTER MODERNO
+===================================== */
 
-.footer-div01{
+.footer {
     width: 100%;
-    
+    max-width: 1300px;
+    height: auto;
+    min-height: 0;
+    margin: 60px auto 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    box-sizing: border-box;
 }
 
-.footer-div02{
-    width: 40%;
+.footer-container {
+    width: 100%;
+    padding: 50px 60px 25px;
+    box-sizing: border-box;
+}
+
+.footer-apresentacao {
+    text-align: center;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #383838;
+}
+
+.footer-apresentacao h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.footer-apresentacao p {
+    max-width: 650px;
     margin: 0 auto;
-    display: inline-block;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
 }
 
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.footer-coluna h3 {
+    margin: 0 0 18px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-coluna li {
+    margin-bottom: 12px;
+}
+
+.footer-coluna a {
+    color: #bdbdbd;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-coluna a:hover {
+    color: #ffffff;
+}
+
+.footer-coluna a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.footer-bottom {
+    padding-top: 22px;
+    border-top: 1px solid #383838;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #999999;
+    font-size: 12px;
+}
+
+/* =====================================
+   FOOTER MOBILE
+===================================== */
+
+@media (max-width: 767px) {
+
+    .footer {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .footer-container {
+        padding: 35px 20px 25px;
+    }
+
+    .footer-apresentacao h2 {
+        font-size: 22px;
+    }
+
+    .footer-apresentacao p {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .footer-coluna h3 {
+        font-size: 14px;
+    }
+
+    .footer-coluna a {
+        font-size: 13px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+}
 
 .footer-div01-p{
     color:#ffffff;
@@ -715,32 +838,6 @@ button:hover {
     margin: 10px 0 0 0;
     text-decoration: none;
 }
-
-.footer-div03{
-    width: 20%;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.footer-div03-ul{
-    color:#ffffff;
-    font-size: 16px;
-    text-align: left;
-}
-
-.footer-div03-li{
-    color: #ffffff;
-    font-size: 16px;
-    text-align: left;
-    margin: 10px 0 0 0;
-    text-decoration: none;
-}
-
-
-
-
-
-
 
 /* =========================
    OVERLAY GENÉRICO
@@ -806,4 +903,435 @@ button:hover {
     outline: 2px solid currentColor;
     outline-offset: 3px;
     border-radius: 2px;
+}
+
+
+/* ========================================
+   CARD FLOWDESK - PORTFOLIO
+======================================== */
+
+.projeto-card-flowdesk {
+    padding: 0;
+    overflow: hidden;
+}
+
+.projeto-card-flowdesk .projeto-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0f172a;
+}
+
+.projeto-card-flowdesk .projeto-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.projeto-card-flowdesk:hover .projeto-imagem img {
+    transform: scale(1.04);
+}
+
+.projeto-card-flowdesk .projeto-conteudo {
+    padding: 25px;
+}
+
+.projeto-card-flowdesk .projeto-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.projeto-card-flowdesk .projeto-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background-color 0.25s ease;
+}
+
+.projeto-card-flowdesk .projeto-btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.projeto-card-flowdesk .projeto-btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.projeto-card-flowdesk .projeto-btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #64748b;
+}
+
+.projeto-card-flowdesk .projeto-btn-secondary:hover {
+    background-color: #263247;
+}
+
+.projeto-card-flowdesk .projeto-btn:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .projeto-card-flowdesk .projeto-conteudo {
+        padding: 20px;
+    }
+
+    .projeto-card-flowdesk .projeto-acoes {
+        flex-direction: column;
+    }
+
+    .projeto-card-flowdesk .projeto-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projeto-card-flowdesk .projeto-imagem img {
+        transition: none;
+    }
+
+    .projeto-card-flowdesk:hover .projeto-imagem img {
+        transform: none;
+    }
+}
+
+
+/* =========================================
+   AJUSTES RESPONSIVOS - MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .pai {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .quem-sou-eu {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .imagem-minha {
+        width: 100%;
+        flex: none;
+    }
+
+    .imagem-minha img {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .espc-minha {
+        width: 100%;
+        height: auto;
+        flex: none;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .espc-minha p {
+        text-align: center;
+    }
+
+    .esp-baixo-minha {
+        width: 100%;
+        padding: 25px 15px;
+        box-sizing: border-box;
+    }
+
+    .hero-destaque {
+        font-size: 21px;
+    }
+
+    .hero-stack {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .projetos-destaque {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin: 45px auto;
+    }
+
+    .projetos-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .projeto-card {
+        min-width: 0;
+    }
+
+    .projeto-card-flowdesk .projeto-acoes {
+        flex-direction: column;
+    }
+
+    .projeto-card-flowdesk .projeto-btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .case-estudo {
+        width: calc(100% - 30px);
+        padding: 20px;
+        margin: 45px auto;
+    }
+
+    .case-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+}
+
+/* BOTÃO VER CASE - BR360 */
+
+.projeto-link-button {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    padding: 0 0 3px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.projeto-link-button:hover {
+    background: transparent;
+    opacity: 0.65;
+}
+
+.projeto-link-button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+
+/* ==========================================
+   ONDE TRABALHEI - GRID RESPONSIVO
+========================================== */
+
+.ja-trabalhei {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.imgs-deonde-trabalhei,
+.imgs-deonde-trabalhei2 {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    justify-items: center;
+    height: auto;
+}
+
+.imgs-deonde-trabalhei img,
+.imgs-deonde-trabalhei2 img {
+    margin: 0;
+}
+
+.imgs-deonde-trabalhei .img-button,
+.imgs-deonde-trabalhei2 .img-button {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border-radius: 8px;
+}
+
+.imgs-deonde-trabalhei .img-button img,
+.imgs-deonde-trabalhei2 .img-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .imgs-deonde-trabalhei,
+    .imgs-deonde-trabalhei2 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .ja-trabalhei {
+        width: 100%;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    .imgs-deonde-trabalhei,
+    .imgs-deonde-trabalhei2 {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .imgs-deonde-trabalhei,
+    .imgs-deonde-trabalhei2 {
+        gap: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .img-button img {
+        transition: none;
+    }
+}
+
+
+/* =====================================
+   CORREÇÃO DOS CARDS - MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .ja-trabalhei {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 0;
+        box-sizing: border-box;
+    }
+
+    .imgs-deonde-trabalhei,
+    .imgs-deonde-trabalhei2 {
+        width: calc(100% - 48px);
+        max-width: calc(100% - 48px);
+        min-width: 0;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .imgs-deonde-trabalhei .img-button,
+    .imgs-deonde-trabalhei2 .img-button {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imgs-deonde-trabalhei .img-button img,
+    .imgs-deonde-trabalhei2 .img-button img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        max-height: none;
+        margin: 0;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+}
+
+/* Centralizar último card quando estiver sozinho no mobile */
+@media (max-width: 600px) {
+    .imgs-deonde-trabalhei .img-button:last-child:nth-child(odd),
+    .imgs-deonde-trabalhei2 .img-button:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: calc((100% - 12px) / 2);
+        justify-self: center;
+    }
+}
+
+
+/* =====================================
+   ESPAÇAMENTO ENTRE GRUPOS DE EMPRESAS
+===================================== */
+
+@media (max-width: 600px) {
+
+    .imgs-deonde-trabalhei + .imgs-deonde-trabalhei2 {
+        margin-top: 12px;
+    }
+
+}
+
+
+/* =====================================
+   OVERLAYS - MELHORIAS RESPONSIVAS
+===================================== */
+
+.overlay-box {
+    box-sizing: border-box;
+    max-height: calc(100dvh - 40px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.overlay-box .ov-titulo {
+    padding-right: 35px;
+    line-height: 1.4;
+}
+
+.ov-limite {
+    max-height: none;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+}
+
+@media (max-width: 600px) {
+
+    .overlay-box {
+        width: calc(100% - 32px);
+        max-width: 100%;
+        max-height: calc(100dvh - 32px);
+        padding: 22px 18px;
+    }
+
+    .overlay-box .ov-titulo {
+        font-size: 18px;
+        padding-right: 30px;
+    }
+
+    .ov-limite {
+        padding-right: 6px;
+    }
 }
