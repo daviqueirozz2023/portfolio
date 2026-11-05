@@ -1398,3 +1398,154 @@ button:hover {
         outline-offset: 3px;
     }
 }
+
+/* Ajuste da imagem principal do portfólio */
+.imagem-minha img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =====================================================
+   NOVO HERO — AMBIENTE DE PROGRAMAÇÃO (DESKTOP E MOBILE)
+   Imagem: hero-programacao.webp, na mesma pasta do CSS.
+   ===================================================== */
+.portfolio-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 620px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 72px clamp(24px, 6vw, 85px);
+    background-color: #06101f;
+    background-image:
+        linear-gradient(90deg, #06101f 0%, #06101f 30%, rgba(6,16,31,.94) 43%, rgba(6,16,31,.32) 78%, rgba(6,16,31,.12) 100%),
+        url("hero-programacao.webp");
+    background-size: cover, auto 100%;
+    background-repeat: no-repeat;
+    background-position: center, right center;
+    color: #fff;
+}
+.portfolio-hero-conteudo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 670px;
+}
+.portfolio-hero-label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 30px;
+    color: #c4d8e9;
+    font-size: 13px;
+    letter-spacing: .36em;
+    font-weight: 700;
+}
+.portfolio-hero-label::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    border-radius: 4px;
+    background: #17d8ee;
+}
+.portfolio-hero h1 {
+    margin: 0;
+    font-size: clamp(35px, 4.4vw, 60px);
+    line-height: 1.13;
+    letter-spacing: -.035em;
+    font-weight: 800;
+    overflow-wrap: break-word;
+}
+.portfolio-hero h1 span { color: #40d9f5; }
+.portfolio-hero-descricao {
+    max-width: 580px;
+    margin: 28px 0 0;
+    padding-left: 18px;
+    border-left: 3px solid #20c8ed;
+    color: #e0e8f1;
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.65;
+}
+.portfolio-hero-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 30px 0 0;
+    padding: 0;
+}
+.portfolio-hero-tecnologias li {
+    padding: 10px 13px;
+    border: 1px solid rgba(153,208,243,.3);
+    border-radius: 8px;
+    background: rgba(4,17,34,.7);
+    color: #f0f7fc;
+    font-size: 13px;
+    font-weight: 700;
+}
+.portfolio-hero-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 36px;
+}
+.portfolio-hero-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 22px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.portfolio-hero-botao-primario { background: #fff; color: #07101e; }
+.portfolio-hero-botao-primario:hover { background: #c9f5ff; border-color: #c9f5ff; }
+.portfolio-hero-botao-primario span { margin-left: 12px; font-size: 21px; }
+.portfolio-hero-botao-secundario { color: #fff; background: rgba(0,0,0,.25); }
+.portfolio-hero-botao-secundario:hover { background: #fff; color: #07101e; }
+.portfolio-hero-botao:focus-visible {
+    outline: 3px solid #55dcff;
+    outline-offset: 4px;
+}
+@media (max-width: 900px) {
+    .portfolio-hero {
+        min-height: 570px;
+        padding: 65px 35px;
+        background-image:
+            linear-gradient(90deg, rgba(6,16,31,.98) 0%, rgba(6,16,31,.93) 42%, rgba(6,16,31,.65) 100%),
+            url("hero-programacao.webp");
+    }
+    .portfolio-hero-conteudo { max-width: 600px; }
+}
+@media (max-width: 600px) {
+    .portfolio-hero {
+        min-height: 0;
+        padding: 65px 22px 55px;
+        background-image:
+            linear-gradient(180deg, rgba(6,16,31,.88), rgba(6,16,31,.97)),
+            url("hero-programacao.webp");
+        background-size: cover, auto 100%;
+        background-position: center, 62% center;
+    }
+    .portfolio-hero-label { font-size: 11px; letter-spacing: .25em; margin-bottom: 24px; }
+    .portfolio-hero-label::before { width: 35px; }
+    .portfolio-hero h1 { font-size: clamp(32px, 8vw, 43px); }
+    .portfolio-hero-descricao { font-size: 16px; margin-top: 23px; }
+    .portfolio-hero-tecnologias { gap: 8px; margin-top: 25px; }
+    .portfolio-hero-tecnologias li { font-size: 12px; padding: 9px 11px; }
+    .portfolio-hero-acoes { flex-direction: column; margin-top: 30px; }
+    .portfolio-hero-botao { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .portfolio-hero-botao { transition: none; }
+}

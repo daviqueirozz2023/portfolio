@@ -57,7 +57,7 @@
 >
 
 
-
+    
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -71,48 +71,37 @@
             <div class="menu">
                 <a href="index.html" class="menu-item">Home</a>
                 <a href="indexTrabalhos.html" class="menu-item">Trabalhos</a>
-                <a href="Contato.html" class="menu-item" style="margin: 0 !important;">Contato</a>
+                <a href="contato.html" class="menu-item" style="margin: 0 !important;">Contato</a>
             </div>
         </div>
         <header>
             <div class="header">
-                <div class="quem-sou-eu">
-                    <div class="imagem-minha">
-                        <img src="https://daviamaralqueirozz-hash.github.io/daviamaralqueiroz.github.io/davi-carton-H571px.png fetchpriority="high"
-decoding="async" width="739" height="571"" alt="">
-
-                    </div>
-                    <div class="espc-minha">
-                        <p class="hero-nome">
-                            Olá, eu sou Davi Amaral Queiroz.
-                        </p>
-
-                        <p class="hero-descricao">
-                            Web Designer & Front-End Developer com foco em
+                <!-- Hero responsivo: texto e botões reais sobre imagem de fundo -->
+                <section class="portfolio-hero" aria-labelledby="portfolio-hero-title">
+                    <div class="portfolio-hero-conteudo">
+                        <p class="portfolio-hero-label">PORTFÓLIO</p>
+                        <h1 id="portfolio-hero-title">
+                            Olá, eu sou<br>
+                            Davi Amaral Queiroz.
+                        </h1>
+                        <p class="portfolio-hero-descricao">
+                            Web Designer &amp; Front-End Developer com foco em
                             performance, conversão e experiência do usuário.
                         </p>
+                        <ul class="portfolio-hero-tecnologias" aria-label="Tecnologias e especialidades">
+                            <li>WordPress</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>UX/UI</li>
+                        </ul>
+                        <div class="portfolio-hero-acoes">
+                            <a class="portfolio-hero-botao portfolio-hero-botao-primario" href="#projetos-destaque">Ver Projetos <span aria-hidden="true">→</span></a>
+                            <a class="portfolio-hero-botao portfolio-hero-botao-secundario" href="contato.html">Entrar em Contato</a>
+                        </div>
                     </div>
-                </div>
-                <div class="esp-baixo-minha">
-                    <p class="hero-destaque">
-                        DESIGN, DESENVOLVIMENTO E EXPERIÊNCIAS DIGITAIS
-                        ORIENTADAS À CONVERSÃO.
-                    </p>
-
-                    <p class="hero-stack">
-                        WordPress • HTML • CSS • JavaScript • PHP • UX/UI • CRM
-                    </p>
-
-                    <div class="hero-cta">
-                        <a href="indexTrabalhos.html" class="hero-btn hero-btn-primary">
-                            Ver Projetos
-                        </a>
-
-                        <a href="contato.html" class="hero-btn hero-btn-secondary">
-                            Entrar em Contato
-                        </a>
-                    </div>
-                </div>
+                </section>
 
 <section class="projetos-destaque" id="projetos-destaque">
 
