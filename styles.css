@@ -387,7 +387,7 @@ body {
     
 }
 
-.ja-trabalhei h1{
+.ja-trabalhei h2{
     text-align: center;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
@@ -907,22 +907,22 @@ button:hover {
 
 
 /* ========================================
-   CARD FLOWDESK - PORTFOLIO
+   CARDS COM IMAGEM - FLOWDESK E MIMMO PET
 ======================================== */
 
-.projeto-card-flowdesk {
+.projeto-card-destaque {
     padding: 0;
     overflow: hidden;
 }
 
-.projeto-card-flowdesk .projeto-imagem {
+.projeto-card-destaque .projeto-imagem {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     background-color: #0f172a;
 }
 
-.projeto-card-flowdesk .projeto-imagem img {
+.projeto-card-destaque .projeto-imagem img {
     display: block;
     width: 100%;
     height: 100%;
@@ -934,18 +934,18 @@ button:hover {
     transform: scale(1.04);
 }
 
-.projeto-card-flowdesk .projeto-conteudo {
+.projeto-card-destaque .projeto-conteudo {
     padding: 25px;
 }
 
-.projeto-card-flowdesk .projeto-acoes {
+.projeto-card-destaque .projeto-acoes {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 22px;
 }
 
-.projeto-card-flowdesk .projeto-btn {
+.projeto-card-destaque .projeto-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -957,47 +957,47 @@ button:hover {
     transition: background-color 0.25s ease;
 }
 
-.projeto-card-flowdesk .projeto-btn-primary {
+.projeto-card-destaque .projeto-btn-primary {
     background-color: #2563eb;
     color: #ffffff;
 }
 
-.projeto-card-flowdesk .projeto-btn-primary:hover {
+.projeto-card-destaque .projeto-btn-primary:hover {
     background-color: #1d4ed8;
 }
 
-.projeto-card-flowdesk .projeto-btn-secondary {
+.projeto-card-destaque .projeto-btn-secondary {
     background-color: transparent;
     color: #ffffff;
     border: 1px solid #64748b;
 }
 
-.projeto-card-flowdesk .projeto-btn-secondary:hover {
+.projeto-card-destaque .projeto-btn-secondary:hover {
     background-color: #263247;
 }
 
-.projeto-card-flowdesk .projeto-btn:focus-visible {
+.projeto-card-destaque .projeto-btn:focus-visible {
     outline: 2px solid #93c5fd;
     outline-offset: 3px;
 }
 
 @media (max-width: 600px) {
-    .projeto-card-flowdesk .projeto-conteudo {
+    .projeto-card-destaque .projeto-conteudo {
         padding: 20px;
     }
 
-    .projeto-card-flowdesk .projeto-acoes {
+    .projeto-card-destaque .projeto-acoes {
         flex-direction: column;
     }
 
-    .projeto-card-flowdesk .projeto-btn {
+    .projeto-card-destaque .projeto-btn {
         width: 100%;
         box-sizing: border-box;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .projeto-card-flowdesk .projeto-imagem img {
+    .projeto-card-destaque .projeto-imagem img {
         transition: none;
     }
 
@@ -1079,11 +1079,11 @@ button:hover {
         min-width: 0;
     }
 
-    .projeto-card-flowdesk .projeto-acoes {
+    .projeto-card-destaque .projeto-acoes {
         flex-direction: column;
     }
 
-    .projeto-card-flowdesk .projeto-btn {
+    .projeto-card-destaque .projeto-btn {
         width: 100%;
         box-sizing: border-box;
         text-align: center;
@@ -1548,4 +1548,64 @@ button:hover {
 }
 @media (prefers-reduced-motion: reduce) {
     .portfolio-hero-botao { transition: none; }
+}
+
+
+/* =====================================
+   REFINAMENTOS DOS CARDS EM DESTAQUE
+   FlowDesk e Mimmo Pet compartilham as mesmas classes de UI.
+===================================== */
+.projeto-card-destaque {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.projeto-card-destaque .projeto-conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.projeto-card-destaque .projeto-tech {
+    overflow-wrap: anywhere;
+}
+
+.projeto-card-destaque .projeto-acoes {
+    margin-top: auto;
+    padding-top: 22px;
+}
+
+.projeto-card-destaque .projeto-btn {
+    box-sizing: border-box;
+    min-height: 44px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.projeto-card-destaque .projeto-imagem img {
+    object-position: center top;
+}
+
+@media (min-width: 701px) and (max-width: 1086px) {
+    .projetos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .projetos-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projeto-card,
+    .projeto-card-destaque .projeto-btn {
+        transition: none;
+    }
+    .projeto-card:hover {
+        transform: none;
+    }
 }
